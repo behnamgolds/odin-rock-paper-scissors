@@ -1,5 +1,5 @@
 const gameChoices = ['rock', 'paper', 'scissors'];
-const quitChoices = ["quit", "bye", "exit", "end", "exit"];
+const quitChoices = ["quit", "bye", "exit", "end"];
  
 function getComputerChoice(){
     return gameChoices[Math.floor(Math.random() * 3)];
