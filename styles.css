@@ -1,0 +1,14 @@
+.game-buttons {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-buttons > button {
+    flex: 1;
+    margin: 10px;
+}
