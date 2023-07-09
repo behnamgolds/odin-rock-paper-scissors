@@ -6,6 +6,9 @@ h2 {
 h2 {
   font-size: 1em;
   margin: 0 auto 5px;
+  padding-bottom: 5px;
+  background-color: aliceblue;
+  border-bottom: 1px solid gray;
 }
 
 hr {
@@ -75,4 +78,8 @@ td {
 td,
 th {
   margin: 2px;
+}
+
+#total {
+  background-color: beige;
 }
