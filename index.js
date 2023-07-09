@@ -1,5 +1,4 @@
 const gameChoices = ["rock", "paper", "scissors"];
-const quitChoices = ["quit", "bye", "exit", "end"];
 
 function getComputerChoice() {
   return gameChoices[Math.floor(Math.random() * 3)];
@@ -20,18 +19,21 @@ function play(playerChoice, computerChoice) {
 }
 
 function game(e) {
+  let result = "";
+  let computerChoice = "";
   const playerChoice = e.target.classList.value;
   if (gameChoices.includes(playerChoice)) {
-    let computerChoice = getComputerChoice();
-    let result = play(playerChoice, computerChoice);
-    console.log(result);
-  } else if (quitChoices.includes(playerChoice)) {
-    console.log("You quit the game.");
-    continuePlaying = false;
-  } else {
-    console.log("Please select between 'rock', 'paper', 'scissors'");
+    computerChoice = getComputerChoice();
+    result = play(playerChoice, computerChoice);
+    // console.log(result);
   }
+  message.innerText = result;
+  pchoice.innerText = playerChoice;
+  cchoice.innerText = computerChoice;
 }
 
 const buttons = document.querySelectorAll(".game-buttons > button");
 buttons.forEach((button) => button.addEventListener("click", game));
+const message = document.querySelector(".message");
+const pchoice = document.querySelector("#pchoice");
+const cchoice = document.querySelector("#cchoice");
