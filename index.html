@@ -7,69 +7,87 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Rock Paper Scissors</h1>
-    <div class="game-container">
-      <div class="section controls-section">
-        <h2>Click a button to play</h2>
-        <div class="game-buttons">
-          <button class="rock">Rock</button>
-          <button class="paper">Paper</button>
-          <button class="scissors">Scissors</button>
+    <header>
+      <a
+        target="_blank"
+        href="https://www.theodinproject.com/lessons/foundations-revisiting-rock-paper-scissors"
+      >
+        <h1>Rock Paper Scissors</h1>
+      </a>
+    </header>
+    <main>
+      <div class="game-container">
+        <div class="section controls-section">
+          <h2>Press a button to play</h2>
+          <div class="game-buttons">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissors">Scissors</button>
+          </div>
+          <hr />
+          <div class="reset-container">
+            <button class="reset">Reset Game</button>
+          </div>
         </div>
-        <hr />
-        <div class="reset-container">
-          <button class="reset">Reset Game</button>
+        <div class="section choices-section">
+          <h2>Choices</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Computer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="pchoice">None</td>
+                <td id="cchoice">None</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="section message-section">
+          <h2>Message</h2>
+          <p class="message">Press a button</p>
         </div>
       </div>
-      <div class="section choices-section">
-        <h2>Choices</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Player</th>
-              <th>Computer</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="pchoice">None</td>
-              <td id="cchoice">None</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="section scores-section">
+        <h2>Scores</h2>
+        <div class="wins">
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Player</th>
+                <th>Computer</th>
+                <th>Ties</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>#</th>
+                <td id="pwin">0</td>
+                <td id="cwin">0</td>
+                <td id="ties">0</td>
+              </tr>
+              <tr>
+                <th>Total</th>
+                <td colspan="3" id="total">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="section message-section">
-        <h2>Message</h2>
-        <p class="message">Press a button</p>
-      </div>
-    </div>
-    <div class="section scores-section">
-      <h2>Scores</h2>
-      <div class="wins">
-        <table class="results-table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Player</th>
-              <th>Computer</th>
-              <th>Ties</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>#</th>
-              <td id="pwin">0</td>
-              <td id="cwin">0</td>
-              <td id="ties">0</td>
-            </tr>
-            <tr>
-              <th>Total</th>
-              <td colspan="3" id="total">0</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    </main>
+    <footer>
+      <p class="copyright">
+        Copyright <span class="copyright-sign">©</span>
+        <a target="_blank" href="https://github.com/behnamgolds"
+          >Behnam Golds</a
+        >
+        2023
+      </p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
