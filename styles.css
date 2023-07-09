@@ -1,37 +1,58 @@
-.game-buttons {
-    border: 1px solid gray;
-    padding: 20px;
-    border-radius: 10px;
-    width: 30%;
-    margin: 100px auto 20px;
-    display: flex;
-    justify-content: space-between;
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 0 auto 5px;
+}
+
+hr {
+  margin: 0 0 20px;
+}
+
+.reset-container {
+  text-align: center;
+  margin: auto;
+}
+
+.reset {
+  color: red;
+}
+
+.game-container {
+  margin-top: 20px;
+}
+
+.section {
+  border: 1px solid gray;
+  width: 30%;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.game-buttons,
+.choices,
+.wins {
+  display: flex;
+  justify-content: space-between;
 }
 
 .game-buttons > button {
-    flex: 1;
-    margin: 10px;
+  flex: 1;
+  margin: 10px;
 }
 
-.choices {
-    border: 1px solid gray;
-    padding: 20px;
-    border-radius: 10px;
-    width: 30%;
-    margin: 10px auto 20px;
-    display: flex;
-    justify-content: space-between;
+#pchoice,
+#cchoice,
+#pwin,
+#cwin,
+#ties {
+  margin-left: 10px;
 }
 
-.choices > div {
-    flex: 1;
-}
-
-.message {
-    width: 30%;
-    margin: auto;
-    text-align: center;
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 20px;
+.message-section {
+  text-align: center;
 }

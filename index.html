@@ -4,25 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="game-buttons">
-      <button class="rock">Rock</button>
-      <button class="paper">Paper</button>
-      <button class="scissors">Scissors</button>
-    </div>
-    <div class="choices">
-      <div class="player-choice">
-        <label for="">Player:</label>
-        <span id="pchoice"></span>
+    <h1>Rock Paper Scissors</h1>
+    <div class="game-container">
+      <div class="section controls-section">
+        <h2>Click a button to play</h2>
+        <hr />
+        <div class="game-buttons">
+          <button class="rock">Rock</button>
+          <button class="paper">Paper</button>
+          <button class="scissors">Scissors</button>
+        </div>
+        <hr />
+        <div class="reset-container">
+          <button class="reset">Reset Game</button>
+        </div>
       </div>
-      <div class="computer-choice">
-        <label for="cchoice">Computer:</label>
-        <span id="cchoice"></span>
+      <div class="section choices-section">
+        <h2>Choices</h2>
+        <hr />
+        <div class="choices">
+          <div class="player-choice">
+            <label for="">Player:</label>
+            <span id="pchoice"></span>
+          </div>
+          <div class="computer-choice">
+            <label for="cchoice">Computer:</label>
+            <span id="cchoice"></span>
+          </div>
+        </div>
+      </div>
+      <div class="section message-section">
+        <h2>Result</h2>
+        <hr />
+        <p class="message">Press a button</p>
       </div>
     </div>
-    <div class="message">Press a button</div>
+    <div class="section wins-section">
+      <h2>Wins</h2>
+      <hr />
+      <div class="wins">
+        <div class="player-wins">
+          <label for="pwin">Player:</label>
+          <span id="pwin">0</span>
+        </div>
+        <div class="computer-wins">
+          <label for="cwin">Computer:</label>
+          <span id="cwin">0</span>
+        </div>
+        <div class="ties">
+          <label for="ties">Ties:</label>
+          <span id="ties">0</span>
+        </div>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
