@@ -5,6 +5,7 @@ function getComputerChoice() {
 }
 
 function play(playerChoice, computerChoice) {
+  totalCount++;
   if (playerChoice === computerChoice) {
     tiesCount++;
     return "It's a tie.";
@@ -43,6 +44,7 @@ function game(e) {
   pwin.innerText = pwinCount;
   cwin.innerText = cwinCount;
   ties.innerText = tiesCount;
+  total.innerText = totalCount;
 }
 
 function toggleButtons() {
@@ -53,9 +55,13 @@ function resetGame(e) {
   pwin.innerText = 0;
   cwin.innerText = 0;
   ties.innerText = 0;
+  total.innerText = 0;
+  pchoice.innerText = "None";
+  cchoice.innerText = "None";
   pwinCount = 0;
   cwinCount = 0;
   tiesCount = 0;
+  totalCount = 0;
   message.innerText = "Press a button";
   if (buttons[0].disabled) {
     toggleButtons();
@@ -73,8 +79,10 @@ const cchoice = document.querySelector("#cchoice");
 const pwin = document.querySelector("#pwin");
 const cwin = document.querySelector("#cwin");
 const ties = document.querySelector("#ties");
+const total = document.querySelector("#total");
 
 document.querySelector(".reset").addEventListener("click", resetGame);
 let pwinCount = 0;
 let cwinCount = 0;
 let tiesCount = 0;
+let totalCount = 0;
