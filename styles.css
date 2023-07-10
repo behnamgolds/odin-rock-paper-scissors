@@ -5,13 +5,22 @@ header,
 footer {
   background-color: #1f2937;
   color: #f9faf8;
-  padding: 5px;
   text-align: center;
+}
+
+footer {
+  padding-top: 15px;
 }
 
 a {
   color: #f9faf8;
-  text-decoration: dashed;
+  text-decoration: underline;
+  /* text-decoration: dotted; */
+}
+
+a:hover,
+a:active {
+  color: rgb(122, 212, 212);
 }
 
 button {
@@ -45,7 +54,7 @@ hr {
 }
 
 .reset {
-  color: red;
+  color: rgb(48, 135, 135);
 }
 
 .game-container {
