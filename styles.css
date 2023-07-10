@@ -14,13 +14,11 @@ footer {
 
 a {
   color: #f9faf8;
-  text-decoration: underline;
-  /* text-decoration: dotted; */
 }
 
 a:hover,
 a:active {
-  color: rgb(122, 212, 212);
+  color: rgb(152, 247, 247);
 }
 
 button {
@@ -69,9 +67,7 @@ hr {
   padding: 10px;
 }
 
-.game-buttons,
-.choices,
-.wins {
+.game-buttons {
   display: flex;
   justify-content: space-between;
 }
@@ -79,14 +75,6 @@ hr {
 .game-buttons > button {
   flex: 1;
   margin: 10px;
-}
-
-#pchoice,
-#cchoice,
-#pwin,
-#cwin,
-#ties {
-  margin-left: 10px;
 }
 
 .message-section {
